@@ -48,11 +48,5 @@ function submitApplication(event) {
 
 // Download whitepaper
 function downloadWhitepaper() {
-    // Create a simple PDF with project details
-    const link = document.createElement('a');
-    link.href = 'assets/ETH_Nexus_Whitepaper.pdf';
-    link.download = 'ETH_Nexus_Whitepaper.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.location.href = 'assets/whitepaper.html';
 }
